@@ -1,0 +1,67 @@
+
+body {
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    font-family: 'Play', sans-serif;
+}
+
+h1 {
+    text-align: center;
+} 
+
+img {
+    width: 50%;
+}
+
+button {
+    background-color: white;
+    color: blue;
+    padding: 1em; /* 1em is the same as the size of the font size that we use in the parent element(bigger element that tells the child element what to do). Padding adds space around the content. The content here is the text that's on the button */
+}
+.my-flexbox-divider {
+    display: flex;
+    justify-content: center;
+}
+.newer-pictures {
+    visibility:hidden;
+}
+
+.picture-description {
+    width: 50%;
+}
+
+.section-title{
+    background-color: white;
+    color: blue;
+    width: 80%;
+    font-family: 'Play', sans-serif;
+}
+
+#francisco-lindor-picture {
+    
+}
+
+#kyrie-irving-picture {
+    
+} 
+
+#clayton-kershaw-picture {
+    
+}
+
+#lebron-kyrie-pic {
+    
+}
+
+#jarrett-allen-picture {
+    
+}
+
+#curtis-granderson-celebrate {
+    
+}
+
+#donovan-mitchell-picture {
+    
+}
