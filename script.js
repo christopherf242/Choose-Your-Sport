@@ -7,6 +7,7 @@ $("#clayton-kershaw-picture").hide();
 $("#lebron-kyrie-pic").hide();
 $("#jarrett-allen-picture").hide();
 $("#curtis-granderson-celebrate").hide();
+$(".return-home").hide();
 
 //When I click on the Chosen baseball button, the result is that I hide the donovan mitchell picture from the home page by doing: $("#donovan-mitchell-picture").hide().
 $(".chosenBaseball").click(function(){
@@ -27,7 +28,7 @@ $(".play-mlb-season").click(function(){
 
 $(".chosenBasketball").click(function(){
     //Notes: Below, we do the same thing as doing the hide action
-    $("#choices").text("");
+    $("#choices").hide();
     //Notes: Let's show the text
     $(".content").text("You've been selected to play for the Brooklyn Nets. Let's Go Brooklyn Nets!");
     $("#donovan-mitchell-picture").hide();
@@ -49,6 +50,8 @@ $(".playing-defense").dblclick(function(){
     $("#lebron-kyrie-pic").hide();
     $(".content").text("You blocked Lebron James' dunk! The Nets win the NBA championship! ");
     $("#jarrett-allen-picture").show();
+    $(".return-home").show();
+    
 });
 
 $("#clayton-kershaw-picture").dblclick(function(){
@@ -56,4 +59,21 @@ $("#clayton-kershaw-picture").dblclick(function(){
     $("#clayton-kershaw-picture").hide();
     $(".content").text("You hit a home run! Mets win the game and the World Series!");
     $("#curtis-granderson-celebrate").show();
+    $(".return-home").show();
+});
+
+$(".return-home").click(function(){
+    //Now we have to hide that restart button that we clicked on(that has the return-home class)
+    $(".return-home").hide();
+    /*
+    $(".play-mlb-season").show();
+	$(".play-nba-season").show();
+    */
+    $("#choices").show();
+    $("#donovan-mitchell-picture").show();
+    $(".picture-description").show();
+    //Now we'll hide the pictures from the previous step(depending if we chose to play baseball or basketball)
+    $("#jarrett-allen-picture").hide();
+    $("#curtis-granderson-celebrate").hide();
+    $(".content").text("");
 });
