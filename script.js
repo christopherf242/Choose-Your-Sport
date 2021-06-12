@@ -7,6 +7,7 @@ $("#clayton-kershaw-picture").hide();
 $("#lebron-kyrie-pic").hide();
 $("#jarrett-allen-picture").hide();
 $("#curtis-granderson-celebrate").hide();
+$(".sabrina-ionescu").hide();
 $(".return-home").hide();
 
 //When I click on the Chosen baseball button, the result is that I hide the donovan mitchell picture from the home page by doing: $("#donovan-mitchell-picture").hide().
@@ -26,7 +27,7 @@ $(".play-mlb-season").click(function(){
 	$(".content").text("You're in the World Series facing the Los Angeles Dodgers pitcher named Clayton Kershaw. Try to hit the curveball!");
 });
 
-$(".chosenBasketball").click(function(){
+$(".chosenBrooklynNets").click(function(){
     //Notes: Below, we do the same thing as doing the hide action
     $("#choices").hide();
     //Notes: Let's show the text
@@ -35,6 +36,16 @@ $(".chosenBasketball").click(function(){
     $(".picture-description").hide();
     $("#kyrie-irving-picture").show();
     $(".play-nba-season").show();
+});
+
+$(".chosenNewYorkLiberty").click(function(){
+	$("#choices").hide();
+    $(".content").text("You've been selected to play for the New York Liberty. Let's Go New York Liberty!I'm updating my website to have some more fun levels too.");
+    $("#donovan-mitchell-picture").hide();
+    $(".picture-description").hide();
+    $(".sabrina-ionescu").show();
+    $(".return-home").show();
+    
 });
 
 $(".play-nba-season").click(function(){
@@ -75,5 +86,7 @@ $(".return-home").click(function(){
     //Now we'll hide the pictures from the previous step(depending if we chose to play baseball or basketball)
     $("#jarrett-allen-picture").hide();
     $("#curtis-granderson-celebrate").hide();
+    //Also I hide some of the more recent pictures that I've added
+    $(".sabrina-ionescu").hide();
     $(".content").text("");
 });
