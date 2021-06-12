@@ -7,7 +7,7 @@ $("#clayton-kershaw-picture").hide();
 $("#lebron-kyrie-pic").hide();
 $("#jarrett-allen-picture").hide();
 $("#curtis-granderson-celebrate").hide();
-$(".sabrina-ionescu").hide();
+$(".sabrina-ionescu-picture").hide();
 $(".return-home").hide();
 
 //When I click on the Chosen baseball button, the result is that I hide the donovan mitchell picture from the home page by doing: $("#donovan-mitchell-picture").hide().
@@ -40,10 +40,10 @@ $(".chosenBrooklynNets").click(function(){
 
 $(".chosenNewYorkLiberty").click(function(){
 	$("#choices").hide();
-    $(".content").text("You've been selected to play for the New York Liberty. Let's Go New York Liberty!I'm updating my website to have some more fun levels too.");
+    $(".content").text("You've been selected to play for the New York Liberty. Let's Go New York Liberty! I'm updating my website to have some more fun levels too.");
     $("#donovan-mitchell-picture").hide();
     $(".picture-description").hide();
-    $(".sabrina-ionescu").show();
+    $(".sabrina-ionescu-picture").show();
     $(".return-home").show();
     
 });
@@ -87,6 +87,6 @@ $(".return-home").click(function(){
     $("#jarrett-allen-picture").hide();
     $("#curtis-granderson-celebrate").hide();
     //Also I hide some of the more recent pictures that I've added
-    $(".sabrina-ionescu").hide();
+    $(".sabrina-ionescu-picture").hide();
     $(".content").text("");
 });
