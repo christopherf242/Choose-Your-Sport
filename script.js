@@ -3,11 +3,13 @@ $("#francisco-lindor-picture").hide();
 $("#kyrie-irving-picture").hide();
 $(".play-mlb-season").hide();
 $(".play-nba-season").hide();
+$(".play-wnba-season").hide();
 $("#clayton-kershaw-picture").hide();
 $("#lebron-kyrie-pic").hide();
 $("#jarrett-allen-picture").hide();
 $("#curtis-granderson-celebrate").hide();
 $(".sabrina-ionescu-picture").hide();
+$(".sabrina-ionescu-stephanie-watts").hide();
 $(".return-home").hide();
 
 //When I click on the Chosen baseball button, the result is that I hide the donovan mitchell picture from the home page by doing: $("#donovan-mitchell-picture").hide().
@@ -44,7 +46,7 @@ $(".chosenNewYorkLiberty").click(function(){
     $("#donovan-mitchell-picture").hide();
     $(".picture-description").hide();
     $(".sabrina-ionescu-picture").show();
-    $(".return-home").show();
+    $(".play-wnba-season").show();
     
 });
 
@@ -72,6 +74,14 @@ $("#clayton-kershaw-picture").dblclick(function(){
     $("#curtis-granderson-celebrate").show();
     $(".return-home").show();
 });
+
+$(".play-wnba-season").click(function(){
+	$(".sabrina-ionescu-picture").hide();
+	$(".play-wnba-season").hide();
+    $(".sabrina-ionescu-stephanie-watts").show();
+    $(".content").text("The Chicago Sky are winning by 1 point. Stephanie Watts is playing defense, try your best to score and win the game for the New york Liberty. Double click on the picture to score");
+}
+);
 
 $(".return-home").click(function(){
     //Now we have to hide that restart button that we clicked on(that has the return-home class)
