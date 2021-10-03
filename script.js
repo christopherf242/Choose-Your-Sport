@@ -10,6 +10,7 @@ $("#jarrett-allen-picture").hide();
 $("#curtis-granderson-celebrate").hide();
 $(".sabrina-ionescu-picture").hide();
 $(".sabrina-ionescu-stephanie-watts").hide();
+$(".new-york-liberty-celerbrate-picture").hide();
 $(".return-home").hide();
 
 //When I click on the Chosen baseball button, the result is that I hide the donovan mitchell picture from the home page by doing: $("#donovan-mitchell-picture").hide().
@@ -82,6 +83,8 @@ $(".play-wnba-season").click(function(){
     $(".content").text("The Chicago Sky are winning by 1 point. Stephanie Watts is playing defense, try your best to score and win the game for the New york Liberty. Double click on the picture to score");
 }
 );
+
+
 
 $(".return-home").click(function(){
     //Now we have to hide that restart button that we clicked on(that has the return-home class)
