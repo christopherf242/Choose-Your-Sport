@@ -10,7 +10,7 @@ $("#jarrett-allen-picture").hide();
 $("#curtis-granderson-celebrate").hide();
 $(".sabrina-ionescu-picture").hide();
 $(".sabrina-ionescu-stephanie-watts").hide();
-$(".new-york-liberty-celerbrate-picture").hide();
+$("#new-york-liberty-celebrate-picture").hide();
 $(".return-home").hide();
 
 //When I click on the Chosen baseball button, the result is that I hide the donovan mitchell picture from the home page by doing: $("#donovan-mitchell-picture").hide().
@@ -101,5 +101,15 @@ $(".return-home").click(function(){
     $("#curtis-granderson-celebrate").hide();
     //Also I hide some of the more recent pictures that I've added
     $(".sabrina-ionescu-picture").hide();
+    $("#new-york-liberty-celebrate-picture").hide();
     $(".content").text("");
+});
+
+$(".sabrina-ionescu-stephanie-watts").dblclick(function(){
+    
+    $(".sabrina-ionescu-stephanie-watts").hide();
+    //let's show a new picture of the New York Liberty team celebrating
+    $("#new-york-liberty-celebrate-picture").show();
+    $(".content").text("You scored the basket! The New York Liberty win the WNBA championship!");
+    $(".return-home").show();
 });
