@@ -43,7 +43,7 @@ $(".chosenBrooklynNets").click(function(){
 
 $(".chosenNewYorkLiberty").click(function(){
 	$("#choices").hide();
-    $(".content").text("You've been selected to play for the New York Liberty. Let's Go New York Liberty! I'm updating my website to have some more fun levels too.");
+    $(".content").text("You've been selected to play for the New York Liberty. Let's Go New York Liberty!");
     $("#donovan-mitchell-picture").hide();
     $(".picture-description").hide();
     $(".sabrina-ionescu-picture").show();
